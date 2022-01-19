@@ -1,0 +1,143 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    background-color:  #3b3737;
+    padding: 20px 0;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+}
+nav ul{
+    white-space: nowrap;
+    margin: 0 auto;
+}
+nav li{
+    width: 20%;
+    display: inline-block;
+    font-size: 15px;
+}
+nav li:hover{
+    text-decoration: underline;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+.picture{
+    position: relative;
+}
+
+.picture::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+    top: 0;
+    left: 0;
+}
+
+.picture img{
+    width: 100%;
+    height: 100%;
+    opacity: 75%;
+}
+.picture .welcome{
+    position:absolute;
+    left: 0;
+    top: 17%;
+    color: #3b3737;
+    padding: 30px;
+    margin: 10px;
+    z-index: 100;
+}
+.picture h2{
+    font-size: 70px;
+    font-family: geneva;
+    font-style: italic;
+    color: blanchedalmond;
+}
+.picture h2 span{
+    font-size: 30px;
+    color: white;
+    padding:  2px;
+    font-family: monospace;
+}
+.welcome a{
+    text-decoration: none;
+    font-size: 18px;
+    background-color: rgb(247, 131, 22);
+    padding: 10px 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    font-weight: bolder;
+
+}
+.welcome a:hover{
+    background-color: #3b373b;
+    color: #fff;
+}
+.join{
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    color: #3b3737;
+}
+.join h2{
+    font-size: 36px;
+}
+form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 28px;
+    border: 4px solid white;
+}
+.person{
+    font-size: 40px;
+    text-align: center;
+    background-color: #f4f4f4;
+    position: sticky;
+    top: 58px;
+}
+footer{
+    background-color: #3b3737;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+.personalization{
+    margin: 20px 0;
+    white-space: nowrap;
+
+}
+.personalization {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    transition: 2s;
+    margin: 20px 5%;
+    letter-spacing: 10px;
+    text-align: center;
+    
+}
+.box:hover {
+    transform:scale(1.1);
+    z-index:1;
+}
+.personalization img{
+    max-width: 100%;
+}
+#lola{
+    margin-bottom: 30px;
+}
+#person{
+    margin-top: -0.5px;
+}
